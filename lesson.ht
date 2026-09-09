@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Math Adventure — LearnMath</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        LearnMath ✦
+    </div>
+
+    <div class="nav-links">
+        <a href="dashboard.html">← Dashboard</a>
+    </div>
+
+</header>
+
+
+<main class="lesson-page">
+
+    <div class="lesson-header">
+
+        <div>
+            <p class="small-title">
+                MATH ADVENTURE 🚀
+            </p>
+
+            <h1>Addition Challenge</h1>
+        </div>
+
+        <div class="xp-counter">
+            ⭐ <span id="xp">0</span> XP
+        </div>
+
+    </div>
+
+
+    <div class="question-card">
+
+        <div class="question-number">
+            Question <span id="questionNumber">1</span> of 5
+        </div>
+
+        <div class="math-problem" id="question">
+            7 + 5 = ?
+        </div>
+
+        <p class="choose-text">
+            Choose the correct answer 👇
+        </p>
+
+
+        <div class="answers">
+
+            <button class="answer" onclick="checkAnswer(10)">
+                10
+            </button>
+
+            <button class="answer" onclick="checkAnswer(12)">
+                12
+            </button>
+
+            <button class="answer" onclick="checkAnswer(13)">
+                13
+            </button>
+
+            <button class="answer" onclick="checkAnswer(15)">
+                15
+            </button>
+
+        </div>
+
+
+        <div id="feedback" class="feedback"></div>
+
+
+        <button
+            id="nextButton"
+            class="next-button"
+            onclick="nextQuestion()"
+            style="display: none;"
+        >
+            Next question →
+        </button>
+
+    </div>
+
+
+    <div class="lesson-progress">
+
+        <div class="progress">
+            <div
+                class="progress-bar"
+                id="lessonProgress"
+                style="width: 20%;"
+            ></div>
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    LearnMath ✦ Learn. Play. Grow.
+</footer>
+
+
+<script src="lesson.js"></script>
+
+</body>
+
+</html>
