@@ -422,3 +422,167 @@ footer {
         font-size: 35px;
     }
 }
+/* ===== LESSON ===== */
+
+.lesson-page {
+    min-height: 700px;
+    padding: 50px 7%;
+    background: #fff9f0;
+}
+
+.lesson-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.lesson-header h1 {
+    font-size: 42px;
+    color: #25204f;
+}
+
+.xp-counter {
+    background: #ffe36e;
+    padding: 14px 22px;
+    border-radius: 25px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.question-card {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(37, 32, 79, 0.1);
+}
+
+.question-number {
+    color: #69737d;
+    font-weight: 700;
+}
+
+.math-problem {
+    font-size: 70px;
+    font-weight: 900;
+    color: #25204f;
+    margin: 35px 0 15px;
+}
+
+.choose-text {
+    color: #69737d;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.answer {
+    padding: 20px;
+    border: 3px solid #e8e5f0;
+    background: white;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 800;
+    color: #25204f;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.answer:hover {
+    transform: translateY(-4px);
+    border-color: #5b4bff;
+    background: #f5f3ff;
+}
+
+.answer:disabled {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.feedback {
+    min-height: 35px;
+    margin: 25px 0 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.feedback.correct {
+    color: #28a745;
+}
+
+.feedback.wrong {
+    color: #ff6b6b;
+}
+
+.next-button {
+    margin-top: 10px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    background: #5b4bff;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.lesson-progress {
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.completion-icon {
+    font-size: 90px;
+}
+
+.completion h1 {
+    font-size: 40px;
+    color: #25204f;
+    margin: 15px 0;
+}
+
+.completion p {
+    font-size: 19px;
+    color: #69737d;
+    margin-bottom: 25px;
+}
+
+.final-xp {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 650px) {
+
+    .lesson-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .lesson-header h1 {
+        font-size: 32px;
+    }
+
+    .question-card {
+        padding: 30px 20px;
+    }
+
+    .math-problem {
+        font-size: 50px;
+    }
+
+    .answers {
+        grid-template-columns: 1fr;
+    }
+}
