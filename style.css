@@ -26,7 +26,22 @@ body {
     font-weight: 800;
     color: #5b4bff;
 }
+/* ===== REGISTER ===== */
 
+.login-card select {
+    width: 100%;
+    padding: 15px 18px;
+    border: 2px solid #e8e5f0;
+    border-radius: 15px;
+    font-size: 16px;
+    background: white;
+    color: #263238;
+    outline: none;
+}
+
+.login-card select:focus {
+    border-color: #5b4bff;
+}
 .nav-links {
     display: flex;
     gap: 25px;
