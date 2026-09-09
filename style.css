@@ -257,7 +257,167 @@ footer {
     .worlds {
         padding: 60px 5%;
     }
+/* ===== DASHBOARD ===== */
 
+.dashboard {
+    padding: 60px 7%;
+    background: #fff9f0;
+    min-height: 700px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 35px;
+    margin-bottom: 30px;
+}
+
+.small-title {
+    color: #5b4bff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    color: #25204f;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #69737d;
+    font-size: 18px;
+}
+
+.avatar {
+    font-size: 90px;
+    background: #ddd6ff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STATS */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.stat-card span {
+    font-size: 35px;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    color: #25204f;
+    margin: 5px 0;
+}
+
+.stat-card p {
+    color: #69737d;
+}
+
+/* CONTINUE */
+
+.continue-card {
+    background: #cceeff;
+    padding: 40px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.continue-card h2 {
+    font-size: 32px;
+    color: #25204f;
+    margin-bottom: 10px;
+}
+
+.continue-card p {
+    color: #59636e;
+    margin-bottom: 15px;
+}
+
+.progress {
+    width: 100%;
+    max-width: 500px;
+    height: 14px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0 8px;
+}
+
+.progress-bar {
+    width: 60%;
+    height: 100%;
+    background: #5b4bff;
+    border-radius: 20px;
+}
+
+.progress-text {
+    font-size: 14px;
+}
+
+.lesson-icon {
+    font-size: 100px;
+}
+
+/* WORLDS */
+
+.dashboard-worlds h2 {
+    font-size: 36px;
+    color: #25204f;
+    margin-bottom: 30px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .welcome h1 {
+        font-size: 30px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .continue-card {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .dashboard {
+        padding: 40px 5%;
+    }
     .section-title {
         font-size: 35px;
     }
